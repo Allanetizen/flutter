@@ -20,11 +20,18 @@ void main() => runApp(MaterialApp(
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Text('Hello Veges'),
+        child: Text(
+            'Hello Veges',
+        style: TextStyle(
+          fontFamily: 'Ubuntu'
+        ),),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){},
-        child: Text('Click!'),
+        child: Text('Click!',
+        style: TextStyle(
+          fontFamily: 'Ubuntu'
+        ),),
         backgroundColor: Colors.green,
       ),
     ),
