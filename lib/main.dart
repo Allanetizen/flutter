@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
-import 'app_screens/home.dart';
 
-void main(){
-  runApp(MaterialApp(
-    title: "Exploring UI widgets",
-    home: Home(),
-  ));
-}
+void main() => runApp(MaterialApp(
+    title: "Cool App",
+    home: Scaffold( //wrapper to the widgets /layouts
+      appBar: AppBar(
+        title: Text('Las Veges'),
+        centerTitle: true, //centers the above text
+      ),
+      body: Center(
+        child: Text('Hello Veges'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Text('Click!'),
+      ),
+    ),
+  )
+);
