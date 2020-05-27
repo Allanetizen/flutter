@@ -22,17 +22,15 @@
                         backgroundColor: Colors.green,
                       ),
                       body: Center(
-                        child: RaisedButton.icon(
-                          //raised button has a shadow unlike FlatButton
-                          onPressed: () {
-                            },
-                          icon: Icon(
-                              Icons.add ,
-                          ),
-                          label: Text('Add a category'),
-                          color: Colors.green,
+                        child: IconButton(
+                          onPressed: (){
+                            print('Clicked dyd');
+                          },
+                          icon:Icon(Icons.add_a_photo) ,
+                          color: Colors.red
                         ),
-                      ),
+                        ),
+                      
 
                       floatingActionButton: FloatingActionButton(
                         onPressed: () {},
