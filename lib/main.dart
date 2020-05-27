@@ -31,7 +31,7 @@ body: Center(
     child: Icon(
         Icons.local_hospital,
          color: Colors.red,
-        size:50.0,
+        size:40.0,
     ),
 
 ),
