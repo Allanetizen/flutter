@@ -28,9 +28,13 @@ centerTitle: true, //centers the above text
 backgroundColor: Colors.green,
 ),
 body: Center(
-child: Image(
-    image: AssetImage('img/healthy.jpg'), //for online pic :Image.network
-),),
+    child: Icon(
+        Icons.local_hospital,
+         color: Colors.red,
+        size:50.0,
+    ),
+
+),
 
 floatingActionButton: FloatingActionButton(
 onPressed: (){},
