@@ -25,13 +25,23 @@ import 'package:flutter/material.dart';
                         centerTitle: true, //centers the above text
                         backgroundColor: Colors.green,
                       ),
-                      body: Container (
-                        padding: EdgeInsets.fromLTRB(10.0, 15.0, 20.0, 12.0),
-                       margin: EdgeInsets.all(30.0), //padding widget:can be used to enclose the text/no color
-                        color: Colors.greenAccent,
-                        child: Text('Hello, eat healthy'),
+                      body: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly , // ctrl alignments
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          Text('Hello world'),
+                          FlatButton(
+                              onPressed: (){},
+                              color: Colors.greenAccent,
+                              child: Text('please click'),
 
-
+                          ),
+                          Container(
+                            color: Colors.blueAccent,
+                            padding: EdgeInsets.all(20.0),
+                            child: Text('was up'),
+                          ),
+                        ],
                       ),
                       floatingActionButton: FloatingActionButton(
                         onPressed: (){},
