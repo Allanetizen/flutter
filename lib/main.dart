@@ -1,6 +1,3 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
                 void main() => runApp(MaterialApp(title: "Cool App", home: Home()));
@@ -25,39 +22,40 @@ import 'package:flutter/material.dart';
                         centerTitle: true, //centers the above text
                         backgroundColor: Colors.green,
                       ),
-                      body: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: <Widget>[
-                          Row(
+                      body: Row(
                             children: <Widget>[
-                              Text('Hello')
-                            ],
-
-                          ),
-                          Container(
-                            padding: EdgeInsets.all(30.0),
-                            margin: EdgeInsets.all(5.0),
-                            color: Colors.black,
-                            child: Text('abs'),
-
-                          ),
-                          Container(
-                            padding: EdgeInsets.all(20.0),
-                            margin: EdgeInsets.all(5.0),
-                            color: Colors.red,
-                            child: Text('abs'),
-
-                          ),
-                          Container(
-                            padding: EdgeInsets.all(40.0),
-                            margin: EdgeInsets.all(5.0),
-                            color: Colors.green,
-                            child: Text('abs'),
-
-                          ),
-                        ],
-                      ),
+                              Expanded(
+                                flex: 3,
+                                child: Image.asset(
+                                    'img/healthy.jpg'
+                                ),
+                              ),
+          Expanded(
+            flex:1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.purple,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            flex:1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex:1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.lightGreenAccent,
+              child: Text('3'),
+            ),
+          )
+        ],
+      ),
                       floatingActionButton: FloatingActionButton(
                         onPressed: (){},
                         child: Text('Click!'),
