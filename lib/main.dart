@@ -36,20 +36,23 @@ import 'package:flutter/material.dart';
 
                           ),
                           Container(
-                            padding: EdgeInsets.all(20.0),
-                            color: Colors.purpleAccent,
+                            padding: EdgeInsets.all(30.0),
+                            margin: EdgeInsets.all(5.0),
+                            color: Colors.black,
                             child: Text('abs'),
 
                           ),
                           Container(
-                            padding: EdgeInsets.all(30.0),
-                            color: Colors.amberAccent,
+                            padding: EdgeInsets.all(20.0),
+                            margin: EdgeInsets.all(5.0),
+                            color: Colors.red,
                             child: Text('abs'),
 
                           ),
                           Container(
                             padding: EdgeInsets.all(40.0),
-                            color: Colors.brown,
+                            margin: EdgeInsets.all(5.0),
+                            color: Colors.green,
                             child: Text('abs'),
 
                           ),
