@@ -25,21 +25,33 @@ import 'package:flutter/material.dart';
                         centerTitle: true, //centers the above text
                         backgroundColor: Colors.green,
                       ),
-                      body: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly , // ctrl alignments
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      body: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
-                          Text('Hello world'),
-                          FlatButton(
-                              onPressed: (){},
-                              color: Colors.greenAccent,
-                              child: Text('please click'),
+                          Row(
+                            children: <Widget>[
+                              Text('Hello')
+                            ],
 
                           ),
                           Container(
-                            color: Colors.blueAccent,
                             padding: EdgeInsets.all(20.0),
-                            child: Text('was up'),
+                            color: Colors.purpleAccent,
+                            child: Text('abs'),
+
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(30.0),
+                            color: Colors.amberAccent,
+                            child: Text('abs'),
+
+                          ),
+                          Container(
+                            padding: EdgeInsets.all(40.0),
+                            color: Colors.brown,
+                            child: Text('abs'),
+
                           ),
                         ],
                       ),
